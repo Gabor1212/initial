@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+  
+}
+   body{
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul{
+  list-style: none;
+
+}
+a{
+  color: #333;
+  text-decoration: none;
+
+}
+h1, h2{
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p{
+  margin: 10px 0;
+}
+
+img{
+  width: 100%;
+}
+/* navbar */  
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+  background-color: #333;
+  color:#fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+.navbar.top{
+  background: transparent;
+}
+.navbar a{
+  color: #fff;
+  padding: 10 30px;
+  margin: 0 20px;
+}
+.navbar a:hover{
+  border-bottom: #28a745 2px solid;
+}
+.navbar ul{
+  display: flex;
+ 
+ 
+}
+.navbar .logo{
+  font-weight: 400;
+}
+/* Header */
+.hero{
+  background: url('../image_resources/image_resources/home/showcase.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero.blog{
+  background: url(../image_resources/image_resources/home/blog.jpg) no-repeat center center/cover;
+  height: 45vh;
+}
+.hero .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1{
+  font-size: 55px;
+}
+.hero content p{
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+.hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.6);
+}
+.hero *{
+  z-index: 10;
+  
+}
+/* Icons */
+.icons {
+  padding: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+.icons h3{
+  font-weight: bold;
+
+}
+.icons i{
+  background-color:#28a745;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+/* Sections */
+.section-header{
+  color: #333;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cases img:hover{
+  opacity:0.7;
+}
+.section-header h2{
+  font-size: 40px;
+  margin: 20px 0;
+}
+.section-padding{
+  padding: 20px 20px 40px;
+}
+/* flex grid */
+.flex-grid .row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px;
+
+
+}
+.flex-grid .column{
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.flex-items{
+  color: #333;
+}
+.team img{
+  border-radius: 50%;
+ 
+    max-width: 100%;
+
+}
+/* Callback form */
+.callback-form{
+  width: 100%;
+  padding: 20px 0;
+}
+.callback-form label{
+  margin-bottom: 5px;
+
+}
+.callback-form .form-control{
+margin-bottom: 5px;
+}
+.callback-form input{
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5 1px solid;  
+}
+.callback-form input:focus{
+  outline-color: #28a745;
+}
+.callback-form .btn{
+padding: 12px 0;
+margin-top:20px ;
+}
+.footer {
+  background-color: #333;
+}
+/* post */
+.post {
+  color: #333;
+  padding: 50px 30px;
+ 
+
+}
+.post h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border: #ccc solid 1px;
+
+}
+.post .meta{
+  margin-bottom: 30px;
+}
+.post img{
+ width: 300px;
+ display: block;
+ border-radius: 50%;
+ margin: 0 auto 30px;
+}
+/* footer */
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+.social i{
+  color: #f5f5f5;
+  
+}
+.footer a :hover{
+  color: #28a745;
+}
+.footer .social > * {
+  padding:30px;
+
+}
+footer p{
+  margin-top: 20px;
+}
+/* mobile */
+@media(max-width: 768px){
+  .navbar{
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+
+  }
+  .navbar a{
+    padding: 10px 10px;
+    margin: 0 3px;
+  
+}
+.flex-items{
+  flex-direction: column;
+
+}
+.flex-columns .column, .flex-grid .column{
+  flex: 100%;
+  max-width: 100%;
+ }
+ .team img{
+  width:70%;
+  
+}
+  }
+.post {
+  color: #333;
+}
+.row .column data-title{
+  color: #ccc;
+}
